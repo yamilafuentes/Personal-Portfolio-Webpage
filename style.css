@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   padding: 0%;
   margin: 0%;
@@ -9,9 +11,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar ul {
+#navbar ul {
   display: flex;
   justify-content: flex-end;
+  gap: 0.8rem;
   position: fixed;
   align-items: center;
   top: 0;
@@ -22,8 +25,14 @@ body {
   list-style: none; 
 }
 
-.navbar li {
+#navbar li {
   margin: 2%;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
 }
 
 #welcome-section {
@@ -37,6 +46,16 @@ body {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+#welcome-section p {
+  font-size: 1.7rem;
+  color: #be3144;
+  font-weight: 200;
+}
+
 #projects {
   background-color: #45567d;
   text-align: center;
@@ -45,16 +64,17 @@ body {
 
 .projects-section-header {
   max-width: 640px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 2.5rem auto;
   border-bottom: 0.1rem solid white;
   font-size: 2.5rem;
   padding: 0% 0 0 0;
 }
 
 .projects-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: auto;
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -69,6 +89,7 @@ body {
 
 .project-image {
   width: 100%;
+  height: calc(100% - 4.5rem);
 }
 
 .project-footer {
@@ -76,5 +97,84 @@ body {
 }
 
 #contact {
-  
+  height: 80vh;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.contact-section-header {
+  text-align: center;
+}
+
+.contact-section-header h2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+.contact-section-header p {
+  font-weight: 200;
+  font-size: 1.8;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+  gap: 2rem;
+  font-size: 1.3rem;
+  padding-top: 2rem;  
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  font-size: 1rem;
+  background: #303841;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  font-weight: 300;
+  border-top: 4px solid #be3144;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: white;
+}
+
+
+@media (min-width: 700px) {
+  .projects-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .project-image {
+    height: calc(100% - 3.5rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+

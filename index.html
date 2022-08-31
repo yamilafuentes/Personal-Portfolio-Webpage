@@ -6,13 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/509074e0cc.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <nav class="navbar">
+  <nav id="navbar" class="nav">
     <ul>
-      <li>About</li>
-      <li>Work</li>
-      <li>Contact</li>
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
   </nav>  
   <section id="welcome-section">
@@ -30,11 +40,11 @@
           <span class="code">/&gt;</span>
         </p>  
       </div>
-       <div class="card">
+      <div class="card">
         <a class="project-tile" href="https://yamilafuentes.github.io/products-webpage/" target="_blank"><img class="project-image" src="assets/products-webpage .png" alt="project"></a>      
         <p class="project-footer">
           <span class="code">&lt;</span>
-          Tribute Page
+          Products-webpage
           <span class="code">/&gt;</span>
         </p>  
       </div>
@@ -42,7 +52,7 @@
         <a class="project-tile" href="https://yamilafuentes.github.io/survey-form/" target="_blank"><img class="project-image" src="assets/survey-form.png" alt="project"></a>      
         <p class="project-footer">
           <span class="code">&lt;</span>
-          Tribute Page
+          survey-form
           <span class="code">/&gt;</span>
         </p>  
       </div>
@@ -50,19 +60,20 @@
         <a class="project-tile" href="https://yamilafuentes.github.io/Documentation-Exercise/" target="_blank"><img class="project-image" src="assets/Documentation-Exercise.png" alt="project"></a>      
         <p class="project-footer">
           <span class="code">&lt;</span>
-          Tribute Page
+          Documentation-Exercise
           <span class="code">/&gt;</span>
         </p>  
       </div>
       <div class="card">
-        <a class="project-tile" href="https://codepen.io/pen?template=eYMQeop" target="_blank"><img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project"></a>      
+        <a class="project-tile" href="https://github.com/yamilafuentes/Personal-Portfolio-Webpage" target="_blank"><img class="project-image" src="assets/personal-portfolio.png" alt="project"></a>      
         <p class="project-footer">
           <span class="code">&lt;</span>
-          Tribute Page
+          Personal portfolio
           <span class="code">/&gt;</span>
         </p>  
       </div>
     </div> 
+    <a href="https://github.com/yamilafuentes?tab=repositories" class="btn" target="_blank">Show all <i class="fas fa-chevron-right"></i></a>
   </section>
   <section id="contact">
     <div class="contact-section-header">
@@ -70,16 +81,26 @@
       <p>How do you take your coffe?</p>
     </div>
     <div class="contact-links">
-      <a href="https://facebook.com/freecodecamp" target="_blank"></a>
-      <a href="https://facebook.com/freecodecamp" target="_blank"></a>
-      <a href="https://facebook.com/freecodecamp" target="_blank"></a>
-      <a href="https://facebook.com/freecodecamp" target="_blank"></a>
-      <a href="https://facebook.com/freecodecamp" target="_blank"></a> 
+      <a href="https://www.linkedin.com/in/yamilafuentes/" target="_blank">
+        <i class="fa-brands fa-linkedin">  Linkedin</i>
+      </a>
+      <a id="profile-link" href="https://github.com/yamilafuentes" target="_blank">
+        <i class="fa-brands fa-github">  Github</i>
+      </a> 
+      <a href="" target="_blank">
+        <i class="fa-brands fa-facebook">  Facebook</i>
+      </a>
+      <a href="" target="_blank">
+        <i class="fa-brands fa-twitter">  Twitter</i>
+      </a>
+      <a href="" target="_blank">
+        <i class="fa-brands fa-gitlab">  Gitlab</i>
+      </a>
     </div>
   </section>
   <footer>
     <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-    <p class="">
+    <p class="footer-link">
       © Created for
       <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
     </p>
